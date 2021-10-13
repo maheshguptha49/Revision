@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  width: 800px;
+  text-align: start;
+}
+.main > div {
+  margin: 0 20px;
+  width: 150px;
+}

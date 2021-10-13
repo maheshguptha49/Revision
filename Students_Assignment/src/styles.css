@@ -1,0 +1,11 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+a {
+  all: none;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
