@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMGGUR</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" defer src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/f1ce217c17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cont1">
+        <div class="cont1-1 navbar">
+            <div id="get_btn" 
+             class="navbar-imgur-logo">
+                <img src="https://cdn.freebiesupply.com/images/large/2x/imgur-logo-white.png" alt="s" width="100px" height="8px" >
+            </div>
+            <div class="navbar-newPost">
+                <button> <span> <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg" alt="" > </span> <span>New post</span> </button>
+            </div>
+            <div class="navbar-search-bar">
+            
+                <input type="text" placeholder="Images,#tags,@users oh my!" >
+            </div>
+            <div class="navbar-ad-button">
+                <button>Go Ad-free</button>
+            </div>
+            <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgLTIgMzQgMzQiIGNsYXNzPSJ1U2NhbGVUcmFuc2l0aW9uIFByb2ZpbGVOYXZiYXItaXRlbSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+Q29tbWVudCBMZWFkZXJib2FyZDwvdGl0bGU+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDMydjMySDB6Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi41IDMpIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTQgMTYuOTc3djcuMDc2bDUuNS0yLjQ4MSA1LjUgMi40ODF2LTcuMDc2bC01LjUgMS4yNDVMNCAxNi45Nzd6Ii8+PGNpcmNsZSBjeD0iOS41IiBjeT0iOS41IiByPSI4LjUiLz48L2c+PC9nPjwvc3ZnPg==" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+Q2hhdDwvdGl0bGU+PHBhdGggc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjA3NiAyNy4xODJhLjI0LjI0IDAgMDAuMzcuMTUzYy45MDgtLjU3NiAyLjgwNS0yLjEyIDUuMzQ1LTQuNDk2bC4zMTMtLjI5MmgzLjk2NWMzIDAgNS40MzEtMi40NDIgNS40MzEtNS40NTR2LTUuMTM5YzAtMy4wMTItMi40MzItNS40NTQtNS40MzEtNS40NTRIMTAuOTMxYy0zIDAtNS40MzEgMi40NDItNS40MzEgNS40NTR2Ni4yOGMwIDIuMzgyIDEuOTIyIDQuMzEzIDQuMjk0IDQuMzEzaDEuMTFsLS4wMjQgMS4xMTVjLS4wMzcgMS42LjAzMyAyLjc4My4xOTYgMy41MnYweiIvPjwvc3ZnPg==" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgLTIgMzQgMzQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPk5vdGlmaWNhdGlvbnM8L3RpdGxlPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTAgMGgzMnYzMkgweiIvPjxwYXRoIHN0cm9rZT0iI2ZmZmZmZiIgZD0iTTE0IDI3Yy42ODEuMTIzIDEuMzQ4LjE4NSAyIC4xODUuNjUyIDAgMS4zMTktLjA2MiAyLS4xODUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTE2IDIzLjcxMWMtNC40MjUgMC05Ljg5OS0uNDUzLTEwLjg0Ny0yLjYxMi0uMjA2LS40Ny0uMzg0LTEuNDE2Ljc0LTIuNDc2IDEuMzkxLTEuMzEyIDEuNjgtMy41NTQgMS45ODYtNS45MjcuNTA4LTMuOTM4IDEuMTQtOC44MzggOC4wOTMtOC45OTkgNy4wMDguMTYxIDcuNjQgNS4wNiA4LjE0OSA4Ljk5OC4zMDYgMi4zNzQuNTk1IDQuNjE1IDEuOTg1IDUuOTI3IDEuMTI1IDEuMDYxLjk0NyAyLjAwNy43NDEgMi40NzYtLjk0OCAyLjE2LTYuNDIyIDIuNjEzLTEwLjg0NyAyLjYxM3pNNy40MDUgMjAuMzNjLjY5LjUxIDMuNjY3IDEuMTc4IDguNTk1IDEuMTc4IDQuOTI4IDAgNy45MDYtLjY2OSA4LjU5NS0xLjE3OGExLjYxNCAxLjYxNCAwIDAgMC0uMTQtLjE0OGMtMS45Ni0xLjg1LTIuMzEzLTQuNTgtMi42NTQtNy4yMi0uNDg5LTMuNzktLjk2NC02LjE4LTQuMDI4LTYuODYyYTkuMzA1IDkuMzA1IDAgMCAwLTEuODAxLS4xOTljLTQuNjQ4LjEwOS01LjIwMSAyLjYyNS01Ljc3MyA3LjA2Mi0uMzQxIDIuNjQtLjY5MyA1LjM3LTIuNjU0IDcuMjE5YTEuNTggMS41OCAwIDAgMC0uMTQuMTQ4eiIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9nPjwvc3ZnPg==" alt="">
+            </div>
+            <div >
+                <div class="name-logo"> <span>M</span> </div>
+            </div>
+        </div>
+        <div class="cont1-2">
+            <p>All work and no memes makes Jack a dull boy </p>
+        </div>
+    </div>
+    <div class="cont3" class="items" id="items">
+        <div class="cont3-1 ">
+            <!-- <div><img src="https://images.unsplash.com/photo-1587502537745-84b86da1204f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM2MzJ8MXwxfHNlYXJjaHwxfHxuYXR1cmV8ZW58MHx8fHwxNjM0MDQzNTE2&ixlib=rb-1.2.1&q=80&w=1080" alt="" width="655.0" height="436.7"></div>
+            <div>
+                <p>woman in brown jacket standing on green grass field near body of water during daytime</p>
+            </div>
+            <div class="icons">
+                <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg"><title>Upvote</title><path fill="currentColor" stroke="#ffffff" stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M7.197 2.524a1.2 1.2 0 011.606 0c.521.46 1.302 1.182 2.363 2.243a29.617 29.617 0 012.423 2.722c.339.435.025 1.028-.526 1.028h-2.397v4.147c0 .524-.306.982-.823 1.064-.417.066-1.014.122-1.843.122s-1.427-.056-1.843-.122c-.517-.082-.824-.54-.824-1.064V8.517H2.937c-.552 0-.865-.593-.527-1.028.52-.669 1.32-1.62 2.423-2.722a52.996 52.996 0 012.364-2.243z"></path></svg>
+                1005
+                </div>
+               <div><svg width="16" height="16" viewBox="0 0 16 16" class="Vote Vote-down" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Downvote</title><path fill="currentColor" stroke="#ffffff" stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M8.803 13.476a1.2 1.2 0 01-1.606 0 53.03 53.03 0 01-2.364-2.243 29.613 29.613 0 01-2.422-2.722c-.339-.435-.025-1.028.526-1.028h2.397V3.336c0-.524.306-.982.823-1.064A11.874 11.874 0 018 2.15c.829 0 1.427.056 1.843.122.517.082.824.54.824 1.064v4.147h2.396c.552 0 .865.593.527 1.028-.52.669-1.32 1.62-2.423 2.722a53.038 53.038 0 01-2.364 2.243z"></path></svg>
+               </div> 
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" class="PostCommentsIcon" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Comments</title><path fill="currentColor" stroke="#ffffff" stroke-width="0" d="M4.455 12.195l.367 1.105 1.037-.53c.266-.135.637-.412 1.039-.74.39-.319.872-.737 1.422-1.245h2.291a3.306 3.306 0 003.306-3.306V5.306A3.306 3.306 0 0010.611 2H5.306A3.306 3.306 0 002 5.306v2.656c0 1.34.933 2.461 2.185 2.75.008.172.025.335.046.479a6.622 6.622 0 00.168.803c.016.07.035.137.056.2z"></path></svg>
+                    <span>135</span>
+                </div>
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" class="PostViewsIcon" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Post views</title><path d="M8 2.5C4.74998 2.5 2.30142 5.50267 1.27514 6.77517C0.925337 7.20917 0.908553 7.76483 1.2278 8.16583C2.22527 9.41833 4.6991 12.5 8 12.5C11.3686 12.5 13.8396 9.31133 14.796 8.0905C15.0769 7.732 15.0674 7.2535 14.7692 6.8755C13.7938 5.6395 11.3376 2.5 8 2.5ZM7.98224 9.33333C6.90897 9.33333 6.03887 8.51233 6.03887 7.5C6.03887 6.4875 6.90897 5.66667 7.98224 5.66667C9.05551 5.66667 9.92561 6.4875 9.92561 7.5C9.92561 8.51233 9.05551 9.33333 7.98224 9.33333Z" fill="currentColor"></path></svg>
+                    <span>22.9m</span>
+                </div>
+            </div> -->
+                
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
