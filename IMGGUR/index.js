@@ -66,16 +66,20 @@ getById("get_btn")?.addEventListener("click",async ()=>{
 let searchGapTime=null
 let searchBar=getById("search-bar")
 let resultsBar=getById("results-bar")
-searchBar.addEventListener("keypress",async (e)=>{
-    console.log("running normally")
-    if(searchGapTime!==null){
-        return
+var timer=null
+function debounceGrandparent(fn,delay,props){
+    return ()=>{
+        console.log(timer,"timer","old timer")
+        clearTimeout(timer)
+       timer= setTimeout(()=>{
+            fn(props)
+        },delay)
     }
-    console.log("running fetching ")
-    searchGapTime=setTimeout(()=>{
-        clearTimeout(searchGapTime)
-        searchGapTime=null
-    },1000)
+}
+searchBar.addEventListener("keydown",async (e)=>{
+   debounceGrandparent(__debounceParent,600,e)()
+})
+async function __debounceParent(e){
     if(!e.target.value) {
         resultsBar.innerHTML=""        
         return}
@@ -88,11 +92,12 @@ searchBar.addEventListener("keypress",async (e)=>{
         resultsBar.append(div)
     })
 
-    console.log(resultsBar.children,"children")
+    // console.log(resultsBar.children,"children")
     resultsBar.style.display=resultsBar.children.length===0?"none":"block"
     resultsBar.style.height=`${35*data.length}px`
-})
+}
 async function debounce(query){
+    console.log("fetching data")
     let res=await fetch("http://localhost:3001/cities")
     let data=await res.json()
     console.log(query,"query")
