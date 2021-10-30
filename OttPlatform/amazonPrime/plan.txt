@@ -1,0 +1,3 @@
+3 collections of [movies,series,music]
+authenation and authorization of the user
+user collection also
